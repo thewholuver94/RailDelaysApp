@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { history } from '../routing.js';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 
 export default class Login extends Component {

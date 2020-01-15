@@ -1,12 +1,13 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { history } from './routing.js';
 
 import Login from './Components/login.component';
 import SignUp from './Components/signup.component';
 
 function App() {
-  return(<Router>
+  return(<Router history={history}>
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
